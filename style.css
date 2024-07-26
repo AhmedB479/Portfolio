@@ -1,0 +1,171 @@
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black
+  /*background-image:linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 147, 45))*/ ;
+  z-index: 0;
+}
+main {
+  align-items: center;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-shadow:
+  0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+.webgl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header {
+  color: aliceblue;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+  width: 100%;
+  position: fixed;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 20px;
+  opacity: 1;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  z-index: 2;
+/*  background-color: rgb(249, 215, 250); */
+}
+
+header table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header th {
+  margin-bottom: 0 auto;
+  padding: 0 10px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.First{
+  color: transparent;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+  font-size: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-top: 80px;
+  opacity: 0.8;
+  padding-top: 10%;
+}
+
+
+.linear-text-grad {
+    background: linear-gradient(to top, rgb(98, 0, 255), rgb(225, 0, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.Second {
+  z-index: 1;
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%; 
+  padding-top: 12%;
+  padding-bottom: 5%;
+}
+.container {
+  /*scroll-snap-type: y mandatory;*/
+  /*overflow-y: scroll;*/
+  height: 100vh;
+  margin: 0;
+  padding: 5%; /* Reduced padding for mobile */
+  width: 100%;
+}
+
+.Links {
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 3%; /* Adjusted padding */
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+  z-index: 1;
+  height: auto; /* Adjust height based on content */
+}
+
+section {
+  padding-right: 0%;
+  padding-left: 25%; /* Adjusted padding */
+  padding-top: 2%;
+  height: auto; /* Adjust height based on content */
+  display: flex;
+  justify-content: center;
+  /*scroll-snap-align: start;*/
+  z-index: 1;
+  background-color: lightgrey;
+}
+
+h2 {
+  font-size: 4vw; /* Use viewport width for responsive font size */
+}
+
+p {
+  font-size: 2vw; /* Use viewport width for responsive font size */
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 5%; /* Further reduced padding for smaller screens */
+  }
+
+  .Links {
+    padding: 5%; /* Adjusted padding */
+  }
+
+  section {
+    padding-left: 5%; /* Adjusted padding */
+  }
+
+  h2 {
+    font-size: 8vw; /* Larger font size for small screens */
+  }
+
+  p {
+    font-size: 6vw; /* Larger font size for small screens */
+  }
+}
